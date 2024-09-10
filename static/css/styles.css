@@ -1,8 +1,28 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  color: #333;
+  font-size: 64px;
+  text-align: center;
+}
+
+p {
+  color: #555;
+}
+
 footer {
   padding: 1rem 0;
   background-color: #f8f9fa;
   border-top: 1px solid #e0e0e0;
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
 }
@@ -29,4 +49,34 @@ footer .mb-1 {
 
 footer .text-center {
   padding-top: 0.5rem; /* Adjust to reduce space above the copyright */
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.profile-picture {
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Same as width to maintain aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures the image is clipped to the circle */
+  border: 1px solid #ddd; /* Optional: Adds a border around the circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for a 3D effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
