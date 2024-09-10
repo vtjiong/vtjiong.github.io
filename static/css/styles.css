@@ -14,48 +14,48 @@ h2 {
   text-align: center;
 }
 
-p {
-  color: #555;
+/* Body and Main Flex Layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
+main {
+  flex-grow: 1;
+}
+
+/* Center the content and buttons */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Footer styling */
 footer {
   padding: 1rem 0;
   background-color: #f8f9fa;
   border-top: 1px solid #e0e0e0;
-  position: relative;
   width: 100%;
-  bottom: 0;
-}
-
-footer a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 10px;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer .container p {
-  margin: 0;
-}
-
-/* Reduce spacing between buttons and copyright */
-footer .mb-1 {
-  margin-bottom: 0rem; /* You can adjust this value to reduce space */
-  text-align: center;
 }
 
 footer .text-center {
-  padding-top: 0.5rem; /* Adjust to reduce space above the copyright */
+  padding-top: 0.5rem;
 }
 
-.skills {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
 .profile-picture {
   width: 300px; /* Adjust the width as needed */
   height: 300px; /* Same as width to maintain aspect ratio */
@@ -66,6 +66,9 @@ footer .text-center {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 502px;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 .profile-picture img {
@@ -79,4 +82,138 @@ a {
   text-decoration: none;
   color: black;
   text-align: center;
+}
+/* Navbar Styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand i {
+  font-size: 1.8rem; /* Adjust icon size */
+  color: #007bff; /* Customize icon color */
+}
+
+.navbar-brand span {
+  font-size: 1.2rem;
+  margin-left: 10px; /* Add space between icon and text */
+  font-weight: bold;
+  color: #333;
+}
+/* Navbar link styling */
+.nav-link {
+  font-size: 1rem;
+  margin-right: 15px;
+  color: #333; /* Default color for links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  pointer-events: cursor;
+}
+
+.nav-link:hover {
+  color: #007bff !important; /* Hover color change (Bootstrap Blue) */ /* Optional underline on hover */
+}
+
+/* Toggler icon adjustments for mobile */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mb-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Skills Section Styling */
+.skills-heading {
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 8px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  background-color: #f8f9fa;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.skill i {
+  font-size: 32px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 18px;
+  color: #333;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.work-heading {
+  margin-bottom: 15px;
+}
+.list-unstyled {
+  list-style: disc;
+  margin-left: 20px;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+  font-size: 40px;
+}
+.github-button {
+  display: inline-flex;
+  align-items: flex-start;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-left: 0;
+  margin-bottom: 2px;
+}
+
+.github-button:hover {
+  background-color: #555;
+}
+
+.github-button i {
+  margin-right: 8px;
 }
