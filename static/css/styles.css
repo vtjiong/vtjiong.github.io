@@ -1,0 +1,32 @@
+footer {
+  padding: 1rem 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .container p {
+  margin: 0;
+}
+
+/* Reduce spacing between buttons and copyright */
+footer .mb-1 {
+  margin-bottom: 0rem; /* You can adjust this value to reduce space */
+  text-align: center;
+}
+
+footer .text-center {
+  padding-top: 0.5rem; /* Adjust to reduce space above the copyright */
+}
