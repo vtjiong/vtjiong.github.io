@@ -1,1 +1,1 @@
-This is my personal website that I built using HTML, Bootstrap CSS, and JS. THis website displays an baout me section, projects, contact me, work experinece, and assigment section for CS 506
+This is my personal website, which I built using HTML, Bootstrap CSS, and JS. This website displays an about me section, projects, contact me, work experience, and assignment section for CS 506
